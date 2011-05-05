@@ -14,6 +14,7 @@
 }
 
 @property (nonatomic, retain) NSDate *timeStamp;
+@property (nonatomic, retain) NSString *name;
 
 
 @end

@@ -1,0 +1,11 @@
+this is a proof of concept for how to add dynamic activerecord like fetchers to core data managed objects.
+
+
+right now only the findAll is implemented, which realistically could be done in a category, but it establishes a baseline pattern for how more dynamic findBy'property name' would be implemented.
+
+it works by overriding similarly to how rails' activerecord works, but catching on to unimplemented messages, and providing a runtime implementation.  in this case, i hook into +(BOOL)resolveClassMethod:(SEL sel);, in more dynamic finders, the implementation would parse out the selector name, determine if the object actually contains the requested core data backed property, build an IMP to inject at runtime, and voila.
+
+
+i also had to do some runtime trickery to get mappings from Class to NSEntityDescription since NSManagedObjectModel doesn't help you out there.  Basically, i just create a flipped version of the entities array and set it as an associated object.
+
+questions? email me: jamiepinkham at me dot com.

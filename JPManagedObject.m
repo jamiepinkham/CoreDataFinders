@@ -53,6 +53,7 @@
         IMP findByImp = (void *)imp_implementationWithBlock(findByBlock);
         NSString *types = [NSString stringWithFormat:@"%s%s%s%s%s", @encode(id), @encode(id), @encode(SEL), @encode(id), @encode(id)];
         class_addMethod([self class]->isa, sel, findByImp, [types UTF8String]);
+        return YES;
     }
     return [super resolveClassMethod:sel];
 }

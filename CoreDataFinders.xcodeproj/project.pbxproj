@@ -20,6 +20,7 @@
 		7D6FF1771372DCB400F4847A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D6FF1751372DCB400F4847A /* RootViewController.xib */; };
 		7D6FF1801372DD0C00F4847A /* NSManagedObjectModel+EntityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FF17F1372DD0C00F4847A /* NSManagedObjectModel+EntityForClass.m */; };
 		7D6FF1831372DF4700F4847A /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FF1821372DF4700F4847A /* Event.m */; };
+		7D6FF1AB137329F900F4847A /* JPManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FF1AA137329F800F4847A /* JPManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		7D6FF17F1372DD0C00F4847A /* NSManagedObjectModel+EntityForClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+EntityForClass.m"; sourceTree = "<group>"; };
 		7D6FF1811372DF4700F4847A /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		7D6FF1821372DF4700F4847A /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		7D6FF1A9137329F800F4847A /* JPManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPManagedObject.h; sourceTree = "<group>"; };
+		7D6FF1AA137329F800F4847A /* JPManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		7D6FF1491372DCB400F4847A = {
 			isa = PBXGroup;
 			children = (
+				7D6FF1A9137329F800F4847A /* JPManagedObject.h */,
+				7D6FF1AA137329F800F4847A /* JPManagedObject.m */,
 				7D6FF1811372DF4700F4847A /* Event.h */,
 				7D6FF1821372DF4700F4847A /* Event.m */,
 				7D6FF17D1372DCD900F4847A /* Categories */,
@@ -192,6 +197,7 @@
 				7D6FF1741372DCB400F4847A /* RootViewController.m in Sources */,
 				7D6FF1801372DD0C00F4847A /* NSManagedObjectModel+EntityForClass.m in Sources */,
 				7D6FF1831372DF4700F4847A /* Event.m in Sources */,
+				7D6FF1AB137329F900F4847A /* JPManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +310,7 @@
 				7D6FF17C1372DCB400F4847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

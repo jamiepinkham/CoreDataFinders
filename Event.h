@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JPManagedObject.h"
 
-
-@interface Event : NSManagedObject {
+@interface Event : JPManagedObject {
     
 }
 

@@ -40,7 +40,6 @@
             NSString *firstCharacter = [propertyName substringWithRange:NSMakeRange(0, 1)];
             NSString *loweredPropertyName = [propertyName stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:[firstCharacter lowercaseString]];
             NSEntityDescription *description = [mom entityDescriptionForClass:_self];
-            NSLog(@"loweredPropertyName = %@", loweredPropertyName);
             NSDictionary *propertyNames = [description propertiesByName];
             if([propertyNames objectForKey:loweredPropertyName]){
                 NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
